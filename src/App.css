@@ -1,0 +1,62 @@
+.unknown, .player_ship, .enemy_ship, .player_miss, .enemy_ship, 
+.player_miss, .enemy_miss, .player_ship_hit, .enemy_ship_hit, 
+.player_ship_sunk, .enemy_ship_sunk {
+  border: 1px solid #000;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.unknown_parag, .player_ship_parag, .enemy_ship_parag, .player_miss_parag, .enemy_ship_parag, 
+.player_miss_parag, .enemy_miss_parag, .player_ship_hit_parag, .enemy_ship_hit_parag, 
+.player_ship_sunk_parag, .enemy_ship_sunk_parag {
+  border: 1px solid #000;
+  width: 24px;
+  height: 24px;
+}
+
+.unknown, .unknown_parag {
+  background: #ccc;
+}
+
+.player_ship, .player_ship_parag {
+  background: rgb(49, 45, 45);
+}
+
+.enemy_ship {
+  background: rgba(187, 255, 0, 0.253);
+}
+
+.player_miss, .player_miss_parag {
+  background: blue;
+}
+
+.enemy_miss, .enemy_miss_parag {
+  background: rgb(211, 250, 104);
+}
+
+.player_ship_hit, .player_ship_hit_parag {
+  background: rgb(248, 4, 207);
+}
+
+.enemy_ship_hit, .enemy_ship_hit_parag {
+  background: rgb(4, 240, 248);
+}
+
+.player_ship_sunk, .player_ship_sunk_parag {
+  background: rgb(248, 61, 4);
+}
+
+.enemy_ship_sunk, .enemy_ship_sunk_parag {
+  background: rgb(0, 255, 76);
+}
+
+.game-row:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.hidden {
+  display: none;
+}
